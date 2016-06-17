@@ -1,0 +1,36 @@
+<ion-header-bar class="bar bar-assertive">
+  <button class="button button-icon button-clear icon ion-navicon" ng-click="showMenu()"></button>
+  <h1 class="title">Favourites</h1>
+  <button class="button button-icon button-clear icon ion-search"></button>
+</ion-header-bar>
+<div class="bar bar-subheader">
+    <ion-tabs>
+        <ion-tab title="Movies">
+
+        </ion-tab>
+
+        <ion-tab title="TV Shows" ui-sref="tab.movies.recommend">
+          <ion-nav-view name="movies-tab"></ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+  </div>
+
+<ion-view>
+  <ion-content class="padding has-subheader">
+
+    <ion-list>
+      <ion-item class="item-avatar-left item-text-wrap">
+        <img src="../img/ionic.png" />
+        <h2>The Facebook</h2>
+        <h3>Ratings : 5.69 form 300 Votes</h3>
+        <p>
+          lorem ipsum lorem ipsum lorem ipsum  lorem ipsum lorem ipsum lorem ipsum  lorem ipsum lorem ipsum lorem ipsum
+          lorem ipsum lorem ipsum lorem ipsum  lorem ipsum lorem ipsum lorem ipsum  lorem ipsum lorem ipsum lorem ipsum
+          lorem ipsum lorem ipsum lorem ipsum  lorem ipsum lorem ipsum lorem ipsum  lorem ipsum lorem ipsum lorem ipsum
+        </p>
+      </ion-item>
+    
+    </ion-list>
+
+  </ion-content>
+</ion-view>

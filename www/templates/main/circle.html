@@ -1,0 +1,29 @@
+<ion-header-bar class="bar bar-assertive">
+  <button class="button button-icon button-clear icon ion-navicon" ng-click="showMenu()"></button>
+  <h1 class="title">My Circle</h1>
+  <button class="button button-icon button-clear icon ion-search"></button>
+</ion-header-bar>
+
+<div class="bar bar-subheader">
+  <ion-tabs>
+      <ion-tab title="Followers" href="#/circle/followers">
+        <ion-nav-view name="followers-tab"></ion-nav-view>
+      </ion-tab>
+
+      <ion-tab title="Following" href="#/circle/following">
+          <ion-nav-view name="following-tab"></ion-nav-view>
+      </ion-tab>
+  </ion-tabs>
+</div>
+
+<ion-view>
+  <ion-content class="padding">
+
+    <ion-list>
+      <ion-item >
+
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

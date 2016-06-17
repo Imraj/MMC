@@ -1,0 +1,36 @@
+      <ion-header-bar class="bar bar-assertive">
+          <button class="button button-clear button-icon ion-navicon" ng-click="showMenu()"></button>
+          <h1 class="title">Movies</h1>
+          <button class="button button-clear button-icon ion-search"></button>
+      </ion-header-bar>
+
+      <div class="bar bar-subheader">
+        <ion-tabs>
+            <ion-tab title="List">
+
+            </ion-tab>
+
+            <ion-tab title="Recommended" ui-sref="tab.movies.recommend">
+              <ion-nav-view name="movies-tab"></ion-nav-view>
+            </ion-tab>
+        </ion-tabs>
+      </div>
+
+      <ion-view title="Home">
+        <ion-content class="has-subheader padding">
+           <ion-list>
+            <ion-item ng-repeat="popular_movie in movies track by $index" href="#/movies/{{movie.movieId}}" class="item-avatar-left item-text-wrap">
+                <img src="../img/{{popular_movie.moviePoster}}" />
+                <h2>{{popular_movie.movieTitle}} | {{movie.movieId}}</h2>
+                <h3>Ratings : {{popular_movie.movieVoteAverage}} from {{popular_movie.movieVoteCount}} votes</h3>
+                <h3>{{popular_movie.releaseDate}}</h3>
+                <h3>{{popular_movie.genre}}
+                <p>
+                  {{popular_movie.short_plot}}
+                </p>
+            </ion-item>
+          </ion-list>
+
+
+        </ion-content>
+      </ion-view>

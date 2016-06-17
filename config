@@ -1,0 +1,9 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	symlinks = false
+	ignorecase = true
+	hideDotFiles = dotGitOnly
+[remote "MMC"]
+	url = https://github.com/Imraj/MMC.git
+	fetch = +refs/heads/*:refs/remotes/MMC/*

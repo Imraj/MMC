@@ -1,0 +1,29 @@
+<ion-header-bar class="bar bar-assertive">
+  <h1 class="title">New Account</h1>
+</ion-header-bar>
+
+<ion-view>
+  <ion-content class="padding">
+
+    <ion-form>
+        <label class="item item-input">
+            <input type="text" placeholder="Full Name" ng-model="user.fullname"/>
+        </label>
+        <label class="item item-input">
+            <input type="text" placeholder="User Name" ng-model="user.username"/>
+        </label>
+        <label class="item item-input">
+            <input type="text" placeholder="Email Address" ng-model="user.email"/>
+        </label>
+        <label class="item item-input">
+            <input type="password" placeholder="Password" ng-model="user.password"/>
+        </label>
+        <label class="item item-input">
+            <input type="password" placeholder="Confirm Password" ng-model="user.cpassword"/>
+        </label>
+        <button class="button button-assertive button-medium button-full"
+            ng-click="createAccount(user.fullname,user.username,user.email,user.password,user.cpassword)">Create Account</button>
+    </ion-form>
+
+  </ion-content>
+</ion-view>

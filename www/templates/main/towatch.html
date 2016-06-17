@@ -1,0 +1,25 @@
+<ion-header-bar class="bar bar-assertive">
+  <button class="button button-icon button-clear icon ion-navicon" ng-click="showMenu()"></button>
+  <h1 class="title">To Watch</h1>
+  <button class="button button-icon button-clear icon ion-search"></button>
+</ion-header-bar>
+
+<div class="bar bar-subheader">
+    <ion-tabs>
+        <ion-tab title="Movies" ui-sref="towatch.movies">
+            <ion-nav-view name="towatch-movies"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="TV Shows" ui-sref="towatch.tvshows">
+           <ion-nav-view name="towatch-tvshows"></ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+  </div>
+
+<ion-view>
+  <ion-content class="padding has-subheader">
+
+   <ion-nav-view animation="slide-left-right"></ion-nav-view>
+
+  </ion-content>
+</ion-view>
